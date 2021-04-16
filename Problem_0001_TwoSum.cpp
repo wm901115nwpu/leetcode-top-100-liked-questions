@@ -3,6 +3,7 @@
 #include <unordered_map>
 
 std::vector<int> twosum(std::vector<int> nums, int target){
+	// key 某个之前的数   value 这个数出现的位置
 	std::unordered_map<int, int> m;
 	for (int i = 0; i < nums.size(); ++i) {
         if (m.count(target - nums[i])) {
