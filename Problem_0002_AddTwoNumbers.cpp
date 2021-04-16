@@ -53,10 +53,10 @@ void printList(ListNode* head)
     ListNode* phead=head;
     while(phead->next!=NULL)
     {
-        std::cout<<phead->val<<" ";
-        phead=phead->next;
+        std::cout << phead->val << "->";
+        phead = phead->next;
     }
-    std::cout<<phead->val;
+    std::cout << phead->val << std::endl;
 }
 
 int main(){
